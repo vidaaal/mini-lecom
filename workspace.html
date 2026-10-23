@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workspace — Mini LECOM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    body{font-family:Inter,system-ui,sans-serif}
+    .nav.active{background:#ede9fe;color:#5b21b6;font-weight:500}
+    .step-dot{width:10px;height:10px;border-radius:9999px}
+    .step-active{background:#7c3aed;box-shadow:0 0 0 3px rgba(124,58,237,.25)}
+    .step-done{background:#16a34a}
+    .step-todo{background:#d4d4d4}
+  </style>
+</head>
+<body class="bg-neutral-100 text-neutral-900 min-h-screen flex flex-col">
+  <div id="topbar"></div>
+  <div class="flex flex-1 overflow-hidden" style="height:calc(100vh - 3rem)">
+    <aside class="w-52 shrink-0 bg-white border-r border-neutral-200 flex flex-col">
+      <nav class="flex-1 overflow-y-auto p-2 space-y-0.5">
+        <button data-view="abrir" class="nav w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2 hover:bg-neutral-50"><i class="fas fa-plus w-4 text-xs text-neutral-400"></i> Abrir</button>
+        <button data-view="inbox" class="nav w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2 hover:bg-neutral-50"><i class="fas fa-th-large w-4 text-xs text-neutral-400"></i> Minhas atividades <span id="badgeInbox" class="ml-auto text-[11px] bg-violet-100 text-violet-700 px-1.5 rounded hidden"></span></button>
+        <button data-view="caixa" class="nav w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2 hover:bg-neutral-50"><i class="fas fa-inbox w-4 text-xs text-neutral-400"></i> Caixa de entrada</button>
+        <button data-view="alerta" class="nav w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2 hover:bg-neutral-50"><i class="fas fa-exclamation-circle w-4 text-xs text-neutral-400"></i> Em alerta</button>
+        <button data-view="atraso" class="nav w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2 hover:bg-neutral-50"><i class="fas fa-clock w-4 text-xs text-neutral-400"></i> Em atraso</button>
+        <button data-view="mine" class="nav w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2 hover:bg-neutral-50"><i class="fas fa-folder w-4 text-xs text-neutral-400"></i> Abertos por mim</button>
+        <button data-view="geridos" class="nav w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2 hover:bg-neutral-50"><i class="fas fa-user-friends w-4 text-xs text-neutral-400"></i> Geridos por mim</button>
+      </nav>
+      <div class="p-2 border-t text-[10px] text-neutral-400">Workspace · LECOM 5.70 MVP</div>
+    </aside>
+    <main id="main" class="flex-1 overflow-y-auto"></main>
+  </div>
+  <script src="lecom-core.js"></script>
+  <script src="workspace.js"></script>
+</body>
+</html>
