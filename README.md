@@ -1,37 +1,44 @@
-# Mini LECOM
+# Mini LECOM (Node.js)
 
-MVP client-side inspirado na plataforma **LECOM** (Workspace, Studio, Admin, Análises).
+MVP inspirado na plataforma **LECOM** + **Controle pessoal de atividades**.
 
-**Repo:** https://github.com/vidaaal/mini-lecom
+Stack: **Node.js nativo** (`http` / `fs` / `path`). **Sem Python. Sem `npm install`.**
 
-## Como usar
+## Execução
 
-1. Clone ou baixe o ZIP completo do projeto
-2. `python -m http.server 8080` na pasta
-3. Abra http://localhost:8080/workspace.html
-4. Menu de módulos (topo) → **Studio** para criar processos
-5. **Workspace** → Abrir para iniciar instâncias
+```bash
+node server.js
+# ou: npm start
+```
 
-## Módulos
+| URL | App |
+|-----|-----|
+| http://localhost:3000/workspace.html | **Mini LECOM** (oficial) — processos, caixa de entrada |
+| http://localhost:3000/studio.html | Studio — diagrama, atividades, campos |
+| http://localhost:3000/admin.html | Pessoas e grupos |
+| http://localhost:3000/analises.html | Indicadores |
+| http://localhost:3000/index.html | Controle pessoal de atividades (Kanban, calendário) |
 
-| Página | Função |
-|--------|--------|
-| `workspace.html` | Minhas atividades, Caixa de entrada, Abrir |
-| `studio.html` | Processos + Diagrama + Campos por atividade |
-| `admin.html` | Pessoas e grupos |
-| `analises.html` | KPIs e auditoria |
-| `index.html` | Controle pessoal de atividades |
+Porta: `PORT=3456 node server.js`
 
-## Studio
+## Segurança (demo)
 
-- **Diagrama**: cada atividade é um quadrado (Formulário / Aprovação / Script JS / Fim)
-- **Atividades**: responsável, ações, script JS
-- **Campos**: matriz Oculto / Normal / Somente leitura por atividade (estilo LECOM)
+Por padrão a API fica **aberta** (uso local).
 
-## Dados
+```bash
+API_KEY=minha-chave-secreta node server.js
+```
 
-`localStorage` (`mini_lecom_v3`). Sem backend. Troque o usuário no topo para simular o fluxo.
+Envie header `X-API-Key` nas chamadas. **Não exponha na internet sem autenticação real.**
 
-Projeto de estudo / protótipo — não é o produto LECOM oficial.
+## Persistência
 
-Veja [FONTES.md](FONTES.md) se faltar algum JS no clone.
+- `data/db.json` (gravação atômica + `.bak`)
+- `localStorage` como fallback
+
+## Documentação
+
+- `docs/DEVOLUTIVA_ANALISE.md`
+- `docs/IDEIAS_FUNCOES_SERVICOS_AUTOMACAO_INOVACAO.md`
+
+Protótipo de estudo — não é o produto LECOM oficial.

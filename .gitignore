@@ -1,5 +1,8 @@
-.DS_Store
 node_modules/
+data/db.json
+data/db.json.bak
+data/db.json.tmp
+.DS_Store
 *.log
 .idea/
 .vscode/
