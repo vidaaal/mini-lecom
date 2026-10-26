@@ -1,15 +1,23 @@
 # Fontes completas
 
-Os arquivos grandes (`workspace.js`, `studio.js`, `app.js`, `index.html`, `admin.html`, `analises.html`) estão no ZIP do projeto entregue no chat.
+## Estrutura Node (oficial)
 
-## Setup rápido
+```bash
+node server.js
+# http://localhost:3000/workspace.html
+```
+
+## ZIP completo
+
+Use o arquivo `mini-lecom.zip` (entregue no chat) com:
+
+- `server.js`
+- `public/*` (workspace, studio, app, etc.)
+- `docs/*`
 
 ```bash
 git clone https://github.com/vidaaal/mini-lecom.git
 cd mini-lecom
-# Extraia o ZIP controle-atividades por cima desta pasta (substitui/completa os JS)
-python -m http.server 8080
-# Abra http://localhost:8080/workspace.html
+# extrair mini-lecom.zip por cima
+node server.js
 ```
-
-Ou use só o ZIP sem git.
