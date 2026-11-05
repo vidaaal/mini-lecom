@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Central de conhecimento LECOM: guias, processos, soluções e referências internas.">
+<title>Central LECOM</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="#inicio" class="brand">
+        <span class="brand-dot"></span>
+        <span>Central <strong>LECOM</strong></span>
+      </a>
+      <button class="icon-btn close-sidebar" id="close-sidebar" aria-label="Fechar menu">✕</button>
+    </div>
+    <nav class="nav">
+      <a href="#inicio" class="nav-item home">Visão geral</a>
+      <div class="nav-label">Coleções</div>
+      <a href="#cat-comece-aqui" class="nav-item" data-cat="comece-aqui"><span class="nav-num">01</span>Comece aqui</a>
+      <a href="#cat-guias-lecom" class="nav-item" data-cat="guias-lecom"><span class="nav-num">02</span>Guias LECOM</a>
+      <a href="#cat-processos" class="nav-item" data-cat="processos"><span class="nav-num">03</span>Processos</a>
+      <a href="#cat-duvidas-e-solucoes" class="nav-item" data-cat="duvidas-e-solucoes"><span class="nav-num">04</span>Dúvidas e soluções</a>
+      <a href="#cat-reunioes-e-treinamentos" class="nav-item" data-cat="reunioes-e-treinamentos"><span class="nav-num">05</span>Reuniões e treinamentos</a>
+      <a href="#cat-glossario" class="nav-item" data-cat="glossario"><span class="nav-num">06</span>Glossário</a>
+      <a href="#cat-melhorias-e-ideias" class="nav-item" data-cat="melhorias-e-ideias"><span class="nav-num">07</span>Melhorias e ideias</a>
+      <a href="#cat-links-uteis" class="nav-item" data-cat="links-uteis"><span class="nav-num">08</span>Links úteis</a>
+    </nav>
+    <div class="sidebar-footer">
+      <span class="status-dot"></span>
+      Base de conhecimento · v1.0
+    </div>
+  </aside>
+
+  <div class="scrim" id="scrim"></div>
+
+  <!-- Main -->
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn" id="menu-btn" aria-label="Abrir menu">☰</button>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="search" id="search" placeholder="Buscar páginas..." autocomplete="off">
+        <kbd>/</kbd>
+      </div>
+      <div class="top-actions">
+        <button class="btn-text" id="fav-toggle" type="button">☆ Favoritos <b id="fav-count">0</b></button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Alternar tema" title="Tema">◐</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / overview -->
+      <section class="hero" id="inicio">
+        <p class="eyebrow">Playbook interno</p>
+        <h1>Central de conhecimento LECOM</h1>
+        <p class="lead">Guias, processos, dúvidas e referências em um só lugar. Feito para consultar rápido e aprender com clareza.</p>
+        <div class="hero-stats">
+          <div><strong>14</strong> páginas</div>
+          <div><strong>8</strong> coleções</div>
+          <div><strong>Offline</strong> disponível</div>
+        </div>
+      </section>
+
+      <!-- Filters -->
+      <div class="toolbar" id="biblioteca">
+        <div class="chips" id="chips">
+          <button class="chip active" data-filter="all">Tudo</button>
+          <button class="chip" data-filter="comece-aqui">Comece aqui</button>
+          <button class="chip" data-filter="guias-lecom">Guias LECOM</button>
+          <button class="chip" data-filter="processos">Processos</button>
+          <button class="chip" data-filter="duvidas-e-solucoes">Dúvidas e soluções</button>
+          <button class="chip" data-filter="reunioes-e-treinamentos">Reuniões e treinamentos</button>
+          <button class="chip" data-filter="glossario">Glossário</button>
+          <button class="chip" data-filter="melhorias-e-ideias">Melhorias e ideias</button>
+          <button class="chip" data-filter="links-uteis">Links úteis</button>
+        </div>
+        <span class="results" id="results-count">14 páginas</span>
+      </div>
+
+      <div id="empty" class="empty" hidden>
+        <strong>Nada encontrado</strong>
+        <p>Tente outra palavra ou limpe os filtros.</p>
+        <button id="clear-filters" class="btn-text">Limpar busca e filtros</button>
+      </div>
+
+      <!-- Articles by category -->
+      <section class="group" id="cat-comece-aqui" data-group="comece-aqui">
+        <h2 class="group-title"><span>01</span> Comece aqui</h2>
+        <details class="card" id="comece-por-aqui-central-lecom" data-article data-category="comece-aqui">
+          <summary>
+            <span class="card-idx">01.01</span>
+            <span class="card-title">Comece por aqui — Central LECOM</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p><b>Bem-vindo(a) à Central de Conhecimento LECOM.</b> Este caderno reúne orientações práticas, aprendizados e referências para apoiar o uso da plataforma e a documentação dos processos da empresa.</p>
+<h2>Como usar este caderno</h2><ul><li>Consulte as páginas antes de abrir uma dúvida ou iniciar um mapeamento.</li><li>Crie uma página por assunto e use títulos claros.</li><li>Identifique cada conteúdo como <b>Rascunho</b>, <b>Em revisão</b> ou <b>Validado</b>.</li><li>Guarde os arquivos oficiais no SharePoint e cole aqui o link, evitando cópias desatualizadas.</li><li>Quando uma orientação mudar, atualize a página e registre a data e o responsável.</li></ul>
+<h2>Status deste conteúdo</h2><p>Status: Rascunho de estrutura<br/>Responsável pelo caderno: [área ou pessoa]<br/>Última revisão: [dd/mm/aaaa]</p>
+<h2>Atalhos</h2><p>Guias LECOM · Processos · Dúvidas e soluções · Reuniões e treinamentos · Glossário · Melhorias e ideias · Links úteis</p>
+<h2>Cuidados</h2><ul><li>Não registre senhas, dados pessoais de clientes ou informações confidenciais.</li><li>Confirme versão, ambiente e permissões antes de publicar instruções do sistema.</li><li>Não trate conteúdo em rascunho como procedimento aprovado.</li></ul>
+          </div>
+        </details>
+      </section>
+      <section class="group" id="cat-guias-lecom" data-group="guias-lecom">
+        <h2 class="group-title"><span>02</span> Guias LECOM</h2>
+        <details class="card" id="como-documentar-um-guia-do-lecom" data-article data-category="guias-lecom">
+          <summary>
+            <span class="card-idx">02.01</span>
+            <span class="card-title">Como documentar um guia do LECOM</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Use esta página como padrão sempre que registrar uma tarefa ou orientação do sistema. Descreva o que foi observado e confirme os passos no ambiente autorizado antes de marcar como validado.</p>
+<h2>Ficha do guia</h2><p>Título da tarefa: [ex.: Consultar uma solicitação]<br/>Objetivo: [o que a pessoa conseguirá fazer]<br/>Para quem: [perfil ou área]<br/>Versão/ambiente LECOM: [informação confirmada]<br/>Status: Rascunho / Em revisão / Validado<br/>Responsável: [nome/área]<br/>Data da última validação: [dd/mm/aaaa]</p>
+<h2>Antes de começar</h2><ul><li>Permissão ou perfil necessário: [preencher]</li><li>Informações/documentos necessários: [preencher]</li><li>Cuidados importantes: [preencher]</li></ul>
+<h2>Passo a passo</h2><ol><li>[Ação e tela confirmadas]</li><li>[Ação e tela confirmadas]</li><li>[Resultado esperado]</li></ol>
+<h2>Se algo der errado</h2><p>Sintoma: [descrever]<br/>Verificações: [o que conferir]<br/>Como pedir ajuda: [canal/equipe]</p>
+<h2>Referências</h2><p>Link oficial no SharePoint: [colar link]<br/>Capturas de tela: [inserir somente se permitido]</p>
+          </div>
+        </details>
+        <details class="card" id="recursos-do-onenote-para-consultar-melhor" data-article data-category="guias-lecom">
+          <summary>
+            <span class="card-idx">02.02</span>
+            <span class="card-title">Recursos do OneNote para consultar melhor</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Pequenas práticas ajudam a encontrar conteúdo sem criar uma estrutura complicada.</p><ul><li><b>Pesquisa:</b> procure palavras do título, mensagens de erro ou nomes de processo.</li><li><b>Tags:</b> use poucas e com significado combinado, como Ação, Dúvida e Validar. Não dependa só da cor.</li><li><b>Links:</b> vincule documentos oficiais do SharePoint em vez de anexar várias cópias.</li><li><b>Títulos:</b> prefira “Como consultar uma solicitação” a “Anotações”.</li><li><b>Reuniões:</b> registre decisões e responsáveis; a gravação, se permitida, fica no repositório definido pela empresa.</li></ul><p>Recursos disponíveis podem variar entre OneNote na web, Windows e Microsoft 365. Mantenha a organização útil mesmo sem recursos avançados.</p>
+          </div>
+        </details>
+      </section>
+      <section class="group" id="cat-processos" data-group="processos">
+        <h2 class="group-title"><span>03</span> Processos</h2>
+        <details class="card" id="cadastro-de-processo-indice" data-article data-category="processos">
+          <summary>
+            <span class="card-idx">03.01</span>
+            <span class="card-title">Cadastro de processo — índice</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Use esta página como índice dos processos documentados. Crie uma página separada para cada processo e mantenha os artefatos oficiais no SharePoint.</p>
+<h2>Processos mapeados</h2><ul><li>[Nome do processo] — área dona: [área] — status: [status] — link do SharePoint: [link]</li><li>[Nome do processo] — área dona: [área] — status: [status] — link do SharePoint: [link]</li></ul>
+<h2>Status padronizados</h2><p>Levantamento · Em modelagem · Em validação com a área · Aprovado · Em revisão · Obsoleto</p>
+<h2>Critério de publicação</h2><p>Marque como Aprovado somente após validação da área responsável e registro do responsável e da data da aprovação.</p>
+          </div>
+        </details>
+        <details class="card" id="ficha-de-processo-modelo" data-article data-category="processos">
+          <summary>
+            <span class="card-idx">03.02</span>
+            <span class="card-title">Ficha de processo — modelo</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p><b>Copie esta página para cada processo novo.</b></p><h2>Identificação</h2><p>Nome do processo: [nome]<br/>Área dona: [área]<br/>Responsável pelo processo: [nome/função]<br/>Objetivo: [resultado esperado]<br/>Início: [evento que inicia]<br/>Fim: [evento que encerra]<br/>Status: Levantamento / Em modelagem / Em validação / Aprovado / Em revisão<br/>Data e aprovador da última validação: [preencher]</p>
+<h2>Escopo e participantes</h2><p>Inclui: [limites]<br/>Não inclui: [limites]<br/>Áreas e papéis envolvidos: [lista]<br/>Sistemas e documentos relacionados: [lista]</p>
+<h2>Como funciona hoje (AS IS)</h2><ol><li>[Etapa — responsável — entrada — saída — sistema — tempo/espera]</li><li>[Etapa — responsável — entrada — saída — sistema — tempo/espera]</li></ol>
+<h2>Pontos de atenção</h2><p>Exceções: [descrever]<br/>Retrabalho/esperas/riscos: [descrever]<br/>Oportunidades percebidas: [descrever]</p>
+<h2>Links oficiais</h2><p>SIPOC: [link]<br/>AS IS: [link]<br/>BPMN: [link]<br/>Procedimentos e formulários: [link]<br/>Atas de validação: [link]</p>
+          </div>
+        </details>
+        <details class="card" id="roteiro-de-levantamento-de-processo" data-article data-category="processos">
+          <summary>
+            <span class="card-idx">03.03</span>
+            <span class="card-title">Roteiro de levantamento de processo</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Use estas perguntas em entrevistas de mapeamento; registre respostas e evidências sem presumir como o processo deveria funcionar.</p><ul><li>O que inicia o processo e qual é o resultado final?</li><li>Quem executa cada etapa? Quem aprova ou recebe?</li><li>Quais informações, documentos e sistemas são usados?</li><li>Quais decisões existem e quais caminhos alternativos podem ocorrer?</li><li>Onde acontecem filas, esperas, retrabalho ou devoluções?</li><li>Com que frequência ocorre e qual o tempo de execução e de espera?</li><li>Quais regras, controles, exceções e riscos precisam ser considerados?</li><li>Como saber que o processo terminou corretamente?</li><li>Quem valida o desenho e quem será responsável por mantê-lo atualizado?</li></ul><p>Resultado: [resumo]<br/>Participantes: [nomes/áreas]<br/>Data: [dd/mm/aaaa]<br/>Link dos documentos: [SharePoint]</p>
+          </div>
+        </details>
+      </section>
+      <section class="group" id="cat-duvidas-e-solucoes" data-group="duvidas-e-solucoes">
+        <h2 class="group-title"><span>04</span> Dúvidas e soluções</h2>
+        <details class="card" id="registro-de-duvida-ou-erro-modelo" data-article data-category="duvidas-e-solucoes">
+          <summary>
+            <span class="card-idx">04.01</span>
+            <span class="card-title">Registro de dúvida ou erro — modelo</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p><b>Registre somente informações necessárias para diagnosticar o problema. Não inclua senha nem dados pessoais sensíveis.</b></p><p>Título: [sintoma em poucas palavras]<br/>Data: [dd/mm/aaaa]<br/>Quem registrou/área: [preencher]<br/>LECOM — versão/ambiente: [se conhecido]<br/>Módulo/tela: [informação confirmada]<br/>Status: Aberto / Em investigação / Resolvido / Não reproduzido</p>
+<h2>O que aconteceu</h2><p>Resultado esperado: [preencher]<br/>Resultado observado: [preencher]<br/>Mensagem de erro literal: [preencher, se houver]<br/>Passos para reproduzir: [listar]</p>
+<h2>Diagnóstico e solução</h2><p>Verificações realizadas: [preencher]<br/>Causa confirmada ou hipótese: [separar claramente]<br/>Solução testada: [preencher]<br/>Quem validou e quando: [preencher]<br/>Ticket/canal de suporte: [referência]</p>
+<h2>Desfecho</h2><p>Resultado após solução: [preencher]<br/>Precisa atualizar um guia? Sim / Não<br/>Link relacionado: [SharePoint/guia]</p>
+          </div>
+        </details>
+        <details class="card" id="indice-de-duvidas-frequentes" data-article data-category="duvidas-e-solucoes">
+          <summary>
+            <span class="card-idx">04.02</span>
+            <span class="card-title">Índice de dúvidas frequentes</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Adicione aqui links para respostas já verificadas. Se uma resposta depender de perfil, configuração ou versão, deixe isso explícito.</p><ul><li>[Pergunta frequente] — [link da página de solução] — validada em [data]</li><li>[Pergunta frequente] — [link da página de solução] — validada em [data]</li></ul><p>Não encontrou solução? Crie uma página usando “Registro de dúvida ou erro — modelo” e acione o canal oficial de suporte.</p>
+          </div>
+        </details>
+      </section>
+      <section class="group" id="cat-reunioes-e-treinamentos" data-group="reunioes-e-treinamentos">
+        <h2 class="group-title"><span>05</span> Reuniões e treinamentos</h2>
+        <details class="card" id="reuniao-ou-treinamento-modelo" data-article data-category="reunioes-e-treinamentos">
+          <summary>
+            <span class="card-idx">05.01</span>
+            <span class="card-title">Reunião ou treinamento — modelo</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Título: [assunto]<br/>Data e horário: [dd/mm/aaaa]<br/>Participantes e áreas: [nomes/áreas]<br/>Facilitador(a): [nome]<br/>Processo relacionado: [nome/link]<br/>Materiais: [links]</p><h2>Objetivo e pauta</h2><ul><li>[item]</li><li>[item]</li></ul>
+<h2>Notas principais</h2><p>[Registrar fatos, dúvidas e pontos que precisam de confirmação.]</p>
+<h2>Decisões</h2><ul><li>Decisão: [descrição] — validada por: [responsável]</li></ul>
+<h2>Ações combinadas</h2><ul><li>Ação: [o que] — responsável: [quem] — prazo: [data] — status: [status]</li></ul>
+<h2>Gravação e privacidade</h2><p>Link da gravação (se permitido): [link no repositório oficial]<br/>Confirme as regras internas de gravação, acesso e retenção. Evite duplicar o arquivo no OneNote.</p>
+<h2>Próximos passos</h2><p>[data/assunto da próxima conversa]</p>
+          </div>
+        </details>
+        <details class="card" id="indice-de-treinamentos" data-article data-category="reunioes-e-treinamentos">
+          <summary>
+            <span class="card-idx">05.02</span>
+            <span class="card-title">Índice de treinamentos</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Registre materiais de capacitação e links aprovados.</p><ul><li>[Tema] — público: [área/perfil] — data: [data] — material: [link] — responsável: [nome]</li><li>[Tema] — público: [área/perfil] — data: [data] — material: [link] — responsável: [nome]</li></ul><p>Revise os links e materiais antes de cada nova turma para evitar instruções antigas.</p>
+          </div>
+        </details>
+      </section>
+      <section class="group" id="cat-glossario" data-group="glossario">
+        <h2 class="group-title"><span>06</span> Glossário</h2>
+        <details class="card" id="glossario-lecom-e-processos" data-article data-category="glossario">
+          <summary>
+            <span class="card-idx">06.01</span>
+            <span class="card-title">Glossário LECOM e processos</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Explique siglas e termos de forma curta. Confirme a definição com a área responsável quando houver mais de um significado.</p><ul><li><b>AS IS:</b> representação de como o processo acontece atualmente.</li><li><b>TO BE:</b> desenho futuro proposto para o processo.</li><li><b>BPMN:</b> notação visual padronizada para representar processos.</li><li><b>SIPOC:</b> visão macro de fornecedores, entradas, processo, saídas e clientes.</li><li><b>LECOM:</b> [definição/contexto adotado pela empresa].</li><li><b>[Sigla/termo]:</b> [definição] — área que confirmou: [área].</li></ul>
+          </div>
+        </details>
+      </section>
+      <section class="group" id="cat-melhorias-e-ideias" data-group="melhorias-e-ideias">
+        <h2 class="group-title"><span>07</span> Melhorias e ideias</h2>
+        <details class="card" id="ideia-de-melhoria-modelo" data-article data-category="melhorias-e-ideias">
+          <summary>
+            <span class="card-idx">07.01</span>
+            <span class="card-title">Ideia de melhoria — modelo</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Registre ideias sem confundi-las com mudanças já aprovadas.</p><p>Título: [ideia]<br/>Processo/área: [nome]<br/>Proposto por: [nome/área]<br/>Data: [dd/mm/aaaa]<br/>Status: Ideia / Em avaliação / Aprovada / Em execução / Concluída / Não priorizada</p><h2>Oportunidade observada</h2><p>Problema ou desperdício: [evidência observada]<br/>Impacto atual: [tempo, qualidade, risco, experiência]<br/>Frequência/alcance: [informação]</p>
+<h2>Proposta e avaliação</h2><p>Mudança sugerida: [descrever]<br/>Benefício esperado: [descrever]<br/>Riscos/dependências: [descrever]<br/>Responsável pela avaliação: [nome]<br/>Decisão e justificativa: [preencher]</p><h2>Acompanhamento</h2><p>Próxima ação: [ação]<br/>Responsável e prazo: [preencher]<br/>Indicador para verificar resultado: [preencher]<br/>Link para processo e evidências: [SharePoint]</p>
+          </div>
+        </details>
+        <details class="card" id="lista-de-melhorias-em-andamento" data-article data-category="melhorias-e-ideias">
+          <summary>
+            <span class="card-idx">07.02</span>
+            <span class="card-title">Lista de melhorias em andamento</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Use esta página como índice leve; os detalhes de cada iniciativa ficam em páginas separadas.</p><ul><li>[Melhoria] — processo: [nome] — responsável: [nome] — status: [status] — próxima data: [data] — link: [página]</li><li>[Melhoria] — processo: [nome] — responsável: [nome] — status: [status] — próxima data: [data] — link: [página]</li></ul><p>Atualize status e próxima ação nas reuniões de acompanhamento.</p>
+          </div>
+        </details>
+      </section>
+      <section class="group" id="cat-links-uteis" data-group="links-uteis">
+        <h2 class="group-title"><span>08</span> Links úteis</h2>
+        <details class="card" id="links-oficiais-e-contatos" data-article data-category="links-uteis">
+          <summary>
+            <span class="card-idx">08.01</span>
+            <span class="card-title">Links oficiais e contatos</span>
+            <span class="card-chevron">+</span>
+          </summary>
+          <div class="card-tools">
+            <button type="button" class="tool-btn" data-favorite>☆ Salvar</button>
+            <button type="button" class="tool-btn" data-copy>↗ Copiar link</button>
+          </div>
+          <div class="card-body">
+            <p>Mantenha links para as fontes oficiais. Teste o acesso e evite guardar cópias locais de documentos controlados.</p><h2>SharePoint</h2><ul><li>Pasta de modelos: [link]</li><li>Processos aprovados: [link]</li><li>Atas e gravações: [link]</li><li>Materiais em revisão: [link]</li></ul><h2>Suporte e responsáveis</h2><ul><li>Responsável funcional LECOM: [nome/equipe e canal]</li><li>Suporte técnico: [canal oficial]</li><li>Dono da biblioteca SharePoint: [nome/equipe]</li></ul><p>Última conferência dos links: [dd/mm/aaaa]</p>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Central LECOM · conteúdo interno · use com responsabilidade</p>
+    </footer>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
